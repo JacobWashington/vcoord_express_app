@@ -1,0 +1,18 @@
+<h1>Users</h1>
+<ul>
+    <% users.forEach(user=> { %>
+        <li>
+            <div class="card">
+                <h2>
+                    <%= `${user.firstName} ${user.lastName}` %>
+                </h2>
+                <p><strong>Location:</strong>
+                    <%= user.location %>
+                </p>
+                <p><strong>Github:</strong>
+                    <%= user.github %>
+                </p>
+            </div>
+        </li>
+        <% }) %>
+</ul>
